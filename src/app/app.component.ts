@@ -6,6 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 
 import { SettingsPage } from '../pages/settings/settings';
+import { HomePage } from '../pages/home/home';
 
 
 
@@ -14,7 +15,7 @@ import { SettingsPage } from '../pages/settings/settings';
 })
 export class MyApp {
   @ViewChild(Nav) navCtrl: Nav;
-    rootPage:any = SettingsPage;
+    rootPage:any = HomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
